@@ -45,6 +45,8 @@
   .info-list {
     padding: 0;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
   }
 
   .pricing-boxes {
@@ -148,14 +150,6 @@
     gap: 3rem;
     margin-bottom: 3rem;
   }
-/* 
-  .phone-sec-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5rem;
-    gap: 1rem;
-  } */
 
   .phone-sec-text-box {
     display: flex;
