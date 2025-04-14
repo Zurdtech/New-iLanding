@@ -650,7 +650,7 @@ label {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
-  /* padding: 2rem; */
+  padding: 2rem;
 }
 
 .f-grid-box {
@@ -692,6 +692,7 @@ label {
   align-items: center;
   padding: 5rem;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 .phone-sec-text-box {
@@ -700,10 +701,18 @@ label {
   gap: 2rem;
 }
 
+.phone-sec-txt1 {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
 .phone-sec-txt {
   display: flex;
   gap: 2rem;
   align-items: center;
+  margin-top: 1.5rem;
 }
 
 .sec-txt {
@@ -717,6 +726,7 @@ label {
   font-size: 2rem;
   text-align: end;
 }
+
 .sec-tittle-second {
   font-size: 2rem;
 }
@@ -725,6 +735,7 @@ label {
   font-size: 18px;
   text-align: end;
 }
+
 .sub-tittle-second {
   font-size: 18px;
 }
@@ -737,6 +748,11 @@ label {
   width: 8rem;
   height: 3rem;
   padding: 2rem;
+}
+
+.sec-icon:hover{
+  background-color: #8db1d8da;
+  color: whitesmoke;
 }
 
 .phone-sec-img {
