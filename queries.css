@@ -486,6 +486,15 @@
   .serve-icon {
     display: none;
   }
+
+  .name-box{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .name{
+    width: 100%;
+  }
 } 
 
 @media (max-width: 321px) {
