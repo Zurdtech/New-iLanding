@@ -9,10 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: whitesmoke;
-}
-
 .nav-box {
   padding: 1.2rem;
 }
@@ -557,51 +553,62 @@ label {
   margin-bottom: 1rem;
 }
 
-.f-tab-btn-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  margin: auto;
-  background-color: whitesmoke;
-  width: max-content;
-  height: 7rem;
-  padding: 2rem;
-  border-radius: 5rem;
-  margin-bottom: 5rem;
+.tab-container{
+  position: relative;
 }
 
-.f-tab-btn {
-  border: none;
-  border-radius: 2rem;
-  font-size: 16px;
-  padding: 1rem 2rem;
-  transition: 0.5s;
-  cursor: pointer;
+.tabs{
+  display: none;
 }
 
-.active {
-  background-color: #0d83fd;
-  color: white;
+.tab-tittle{
+font-size: 16px;
+position: absolute;
+top: -3rem;
+left: 45rem;
+cursor: pointer;
+padding: 5px 20px;
+transition: .3s;
 }
 
-.f-tab-btn:hover {
-  color: white;
-  background-color: #0d83fd;
+.two{
+  left: 55rem;
 }
 
-.f-box {
+.three{
+  left: 67rem;
+}
+
+.tab-tittle:hover {
+  color: #0d83fd;
+}
+
+.tab-content{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.8s;
+  display: none;
 }
 
-.f-box-txt {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.tabs:checked + .tab-tittle {
+  background-color: #0d83fd;
+  color: white;
+  border-radius: 5px;
+}
+
+.tabs:checked + .tab-tittle + .tab-content{
+  display: grid;
+}
+
+.tab-content-text{
+  line-height: 1.2;
 }
 
 .f-tittle {
   font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .fline {
@@ -651,6 +658,7 @@ label {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
+  margin-top: 5rem;
 }
 
 .f-grid-box {
@@ -702,7 +710,16 @@ label {
 }
 
 .phone-sec-txt1 {
-  display: flex;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.phone-sec-txt2 {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
   gap: 2rem;
   align-items: center;
   margin-bottom: 1.2rem;
@@ -741,12 +758,10 @@ label {
 }
 
 .sec-icon {
-  font-size: 5rem;
+  font-size: 3rem;
   background-color: rgba(191, 228, 243, 0.226);
   color: #0d83fd;
   border-radius: 50%;
-  width: 8rem;
-  height: 3rem;
   padding: 2rem;
 }
 
@@ -1044,7 +1059,6 @@ label {
   color: #0d83fd;
   background-color: white;
   border-radius: 2rem;
-  /* width: 30rem; */
   padding: 1rem 2rem;
   gap: 8px;
   text-decoration: none;
@@ -1115,7 +1129,6 @@ sub {
   color: white;
   background-color: #0d83fd;
   border-radius: 2rem;
-  /* width: 30rem; */
   padding: 1rem 2rem;
   gap: 8px;
   text-decoration: none;
@@ -1326,6 +1339,7 @@ sub {
   border-radius: 1rem;
   margin-bottom: 3rem;
 }
+
 .message {
   height: 30%;
   font-size: 16px;
@@ -1438,7 +1452,6 @@ sub {
 
 .coppy {
   font-size: 1.5rem;
-  /* color: gray; */
 }
 
 .aisha {
