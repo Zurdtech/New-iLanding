@@ -1138,7 +1138,8 @@ sub {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 15rem;
-  padding: 5rem;
+  align-items: center;
+  padding: 2rem;
 }
 
 .faq-txt-img {
@@ -1168,9 +1169,9 @@ sub {
 
 .faq-drop{
   width: 100%;
-  margin: 2rem;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
   background-color: white;
+  margin-bottom: 10px;
 }
 
 .faq-drop[open] .drop-inside{
