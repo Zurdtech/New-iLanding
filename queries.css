@@ -93,12 +93,11 @@
 
   .last-box {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 3rem;
     padding: 3rem;
   }
 
-  
   .tab-tittle{
     font-size: 16px;
     position: absolute;
@@ -161,22 +160,23 @@
   }
 
   .phone-sec-box {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     align-items: center;
+    text-align: center;
     padding: 5rem;
     gap: 1rem;
   }
 
   .sec-tittle {
     font-size: 2rem;
-    text-align: left;
+    text-align: center;
   }
 
   
 .sub-tittle {
   font-size: 18px;
-  text-align: left;
+  text-align: center; 
 }
 }
 
@@ -217,7 +217,7 @@
   .tab-tittle{
     font-size: 16px;
     position: absolute;
-    top: -3rem;
+    top: -5rem;
     left: 20rem;
     cursor: pointer;
     padding: 5px 20px;
@@ -236,6 +236,10 @@
       display: grid;
       grid-template-columns: 2fr 2fr;
     }
+
+    .f-end-tittle{
+      font-size: 3rem;
+    }
 }
 
 @media (max-width: 718px) {
@@ -248,10 +252,13 @@
     display: flex;
     flex-direction: column;
   }
+
   .phone-sec-txt1 {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
   }
+
   .sec-txt1 {
     display: flex;
     flex-direction: column;
@@ -265,7 +272,7 @@
   }
 
   .useful-box {
-    display: flex;
+    display: grid;
     flex-direction: column;
   }
 
@@ -326,6 +333,11 @@
     .three{
       left: 29rem;
     }
+
+    .useful-box{
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+    }
     
 }
 
@@ -335,9 +347,19 @@
     flex-direction: column;
     gap: 2rem;
   }
+
   .hero-boxes{
     display: flex;
     gap: 2rem;
+  }
+
+  .hero-text{
+    font-size: 3rem;
+    /* text-align: center; */
+  }
+
+  .hero-txt{
+    text-align: center;
   }
 
   .abt-contact{
@@ -348,6 +370,10 @@
 
   .f-end{
     display: none;
+  }
+
+  .f-client-box{
+    margin-top: 0;
   }
 
   .contact-info-box{
@@ -391,18 +417,25 @@
       display: flex;
       flex-direction: column-reverse;
     }
+
+    .phone-sec-img{
+      max-width: 100%;
+    }
 }
 
 @media(max-width:445px){
   .hero-boxes-box{
     padding: 0;
   }
+
   .features-sec{
     padding: 1rem;
   }
+
   .testimonial{
     padding: 0;
   }
+
   .contact-info-box{
     padding: 2rem;
   }
@@ -445,7 +478,7 @@
     }
     
     .two{
-      left: 11rem;
+      left: 10.8rem;
     }
     
     .three{
@@ -492,6 +525,21 @@
 
   .name{
     width: 100%;
+  }
+
+  .call{
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  .get-in-touch{
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .useful-box{
+    display: flex;
+    flex-direction: column;
   }
 } 
 

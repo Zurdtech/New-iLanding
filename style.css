@@ -80,6 +80,7 @@ html {
 .open{
   display: none;
 }
+
 .close{
   display: none;
 }
@@ -363,6 +364,7 @@ span {
 .about-section {
   background-color: white;
   padding: 5rem;
+  scroll-margin-top: 10rem;
 }
 
 .about-box {
@@ -397,6 +399,7 @@ span {
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   list-style: none;
+  align-items: center;
 }
 
 .about-list {
@@ -526,6 +529,7 @@ label {
 .features-sec {
   background-color: white;
   padding: 5rem;
+  scroll-margin-top: 10rem;
 }
 
 .f-header-box {
@@ -550,7 +554,7 @@ label {
 
 .f-header-txt {
   font-size: 16px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .tab-container{
@@ -587,6 +591,7 @@ transition: .3s;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  padding: 12px;
   gap: 1rem;
   transition: 0.8s;
   display: none;
@@ -841,6 +846,7 @@ transition: .3s;
 .testimonial {
   background-color: aliceblue;
   padding: 5rem;
+  scroll-margin-top: 10rem;
 }
 
 .test-grid-box {
@@ -936,6 +942,7 @@ transition: .3s;
 .services-sec {
   background-color: aliceblue;
   padding: 5rem;
+  scroll-margin: 10rem;
 }
 
 .service-box {
@@ -1007,6 +1014,7 @@ transition: .3s;
 .pricing-sec {
   background-color: aliceblue;
   padding: 5rem;
+  scroll-margin-top: 10rem;
 }
 
 .pricing-boxes {
@@ -1228,6 +1236,7 @@ sub {
 
 .contact-sec {
   padding: 5rem;
+  scroll-margin: 10rem;
 }
 
 .contact-box {
@@ -1267,7 +1276,7 @@ sub {
 }
 
 .contact-icon {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #0d83fd;
   background-color: white;
   border-radius: 50%;
@@ -1348,7 +1357,7 @@ sub {
   padding: 2rem;
   border: 1px solid rgb(226, 222, 222);
   border-radius: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5px;
 }
 
 .touch-link {
@@ -1360,6 +1369,7 @@ sub {
   display: flex;
   margin: auto;
   font-size: 1.5rem;
+  font-weight: 500;
   border: none;
   border-radius: 3rem;
   color: white;
@@ -1376,7 +1386,7 @@ sub {
 .last-box {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 3rem;
+  gap: 2rem;
   padding: 3rem;
 }
 
@@ -1398,6 +1408,7 @@ sub {
   flex-direction: column;
   gap: 10px;
 }
+
 .span-second {
   display: flex;
   flex-direction: column;

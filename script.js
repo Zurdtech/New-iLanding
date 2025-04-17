@@ -8,6 +8,7 @@ const navList = document.querySelectorAll('.nav-link')
 open.addEventListener("click", function (e) {
   nav.classList.toggle("show");
 });
+
 close.addEventListener("click", function (e) {
   nav.classList.toggle("show");
 });
