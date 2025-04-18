@@ -1371,7 +1371,7 @@ sub {
 }
 
 .last {
-  background-color: white;
+  background-color: whitesmoke;
   padding: 2rem;
 }
 
@@ -1450,7 +1450,7 @@ sub {
   gap: 1rem;
   text-align: center;
   padding: 3rem;
-  background-color: white;
+  background-color: whitesmoke;
   border-top: 0.5px solid rgb(230, 224, 224);
 }
 
