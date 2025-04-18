@@ -70,18 +70,18 @@ html {
   text-decoration: none;
 }
 
-.menu-box{
+.menu-box {
   display: flex;
   gap: 1rem;
   align-items: center;
   font-size: 3rem;
 }
 
-.open{
+.open {
   display: none;
 }
 
-.close{
+.close {
   display: none;
 }
 
@@ -147,7 +147,7 @@ html {
   text-decoration: none;
 }
 
-.deepdrop-link:hover{
+.deepdrop-link:hover {
   color: rgb(13, 131, 253, 0.9);
 }
 
@@ -557,29 +557,29 @@ label {
   margin-bottom: 1.5rem;
 }
 
-.tab-container{
+.tab-container {
   position: relative;
 }
 
-.tabs{
+.tabs {
   display: none;
 }
 
-.tab-tittle{
-font-size: 16px;
-position: absolute;
-top: -3rem;
-left: 45rem;
-cursor: pointer;
-padding: 5px 20px;
-transition: .3s;
+.tab-tittle {
+  font-size: 16px;
+  position: absolute;
+  top: -3rem;
+  left: 45rem;
+  cursor: pointer;
+  padding: 5px 20px;
+  transition: 0.3s;
 }
 
-.two{
+.two {
   left: 55rem;
 }
 
-.three{
+.three {
   left: 67rem;
 }
 
@@ -587,7 +587,7 @@ transition: .3s;
   color: #0d83fd;
 }
 
-.tab-content{
+.tab-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -603,11 +603,11 @@ transition: .3s;
   border-radius: 5px;
 }
 
-.tabs:checked + .tab-tittle + .tab-content{
+.tabs:checked + .tab-tittle + .tab-content {
   display: grid;
 }
 
-.tab-content-text{
+.tab-content-text {
   line-height: 1.2;
 }
 
@@ -625,6 +625,7 @@ transition: .3s;
 
 .f-subtittle {
   font-size: 18px;
+  margin-bottom: 1.5rem;
 }
 
 .f-list-box {
@@ -645,11 +646,6 @@ transition: .3s;
   color: #0d83fd;
 }
 
-.list-iconlast {
-  font-size: 3.5rem;
-  color: #0d83fd;
-}
-
 .f-list-txt {
   font-size: 18px;
 }
@@ -663,7 +659,7 @@ transition: .3s;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .f-grid-box {
@@ -770,7 +766,7 @@ transition: .3s;
   padding: 2rem;
 }
 
-.sec-icon:hover{
+.sec-icon:hover {
   background-color: #8db1d8da;
   color: whitesmoke;
 }
@@ -1175,14 +1171,14 @@ sub {
   gap: 3rem;
 }
 
-.faq-drop{
+.faq-drop {
   width: 100%;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
   background-color: white;
   margin-bottom: 10px;
 }
 
-.faq-drop[open] .drop-inside{
+.faq-drop[open] .drop-inside {
   margin-bottom: 1rem;
   color: #0d83fd;
   padding-left: 2rem;
@@ -1190,7 +1186,7 @@ sub {
   padding-bottom: 0;
 }
 
-.faq-drop[open] .drop-inside2{
+.faq-drop[open] .drop-inside2 {
   background-color: white;
   padding-bottom: 2rem;
   padding-left: 2rem;
@@ -1360,11 +1356,6 @@ sub {
   margin-bottom: 5px;
 }
 
-.touch-link {
-  text-decoration: none;
-  padding: 3rem;
-}
-
 .touch-btn {
   display: flex;
   margin: auto;
@@ -1380,7 +1371,7 @@ sub {
 
 .last {
   background-color: white;
-  padding: 5rem;
+  padding: 2rem;
 }
 
 .last-box {
@@ -1432,7 +1423,7 @@ sub {
 .use-list-box {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 12px;
   list-style: none;
 }
 
@@ -1475,10 +1466,29 @@ sub {
   font-size: 16px;
 }
 
-.surd-link{
+.surd-link {
   text-decoration: none;
 }
 
 .surd {
   color: #0d83fd;
+}
+
+.footer-icon-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-icon-box ion-icon {
+  border: 1px solid skyblue;
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.footer-icon-box ion-icon:hover {
+  border: 1px solid #0d83fd;
 }
