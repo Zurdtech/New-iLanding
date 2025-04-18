@@ -462,7 +462,7 @@
 
 @media (max-width: 371px) {
   .card-img-box {
-    left: 0.2rem;
+    left: -2rem;
     bottom: 0.1rem;
   }
 }
