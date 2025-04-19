@@ -364,7 +364,7 @@ span {
 .about-section {
   background-color: white;
   padding: 5rem;
-  scroll-margin-top: 10rem;
+  scroll-margin-top: 8rem;
 }
 
 .about-box {
@@ -529,7 +529,7 @@ label {
 .features-sec {
   background-color: white;
   padding: 5rem;
-  scroll-margin-top: 10rem;
+  scroll-margin-top: 8rem;
 }
 
 .f-header-box {
@@ -699,6 +699,7 @@ label {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  justify-content: center;
   padding: 5rem;
   gap: 1rem;
   margin-top: 1rem;
@@ -772,8 +773,8 @@ label {
 }
 
 .phone-sec-img {
-  width: 90%;
-  padding-left: 5rem;
+  width: 80%;
+  padding-left: 6rem;
 }
 
 .f-end {
@@ -818,31 +819,41 @@ label {
   transition: 0.5s;
 }
 
-.f-client-box {
+.clients {
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 5rem;
-  margin-top: 10rem;
-  background-color: white;
+  display: flex;
   padding: 5rem;
+  overflow: hidden;
+}
+
+.f-client-box {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  animation: animate linear infinite 10s;
 }
 
 .f-client {
   width: 10rem;
-  filter: grayscale(100%);
+  margin: 0 3rem;
 }
 
-.f-client:hover {
-  filter: grayscale(0%);
+
+@keyframes animate {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
+
 
 /* testimonial section start  */
 
 .testimonial {
   background-color: aliceblue;
   padding: 5rem;
-  scroll-margin-top: 10rem;
 }
 
 .test-grid-box {
@@ -938,7 +949,7 @@ label {
 .services-sec {
   background-color: aliceblue;
   padding: 5rem;
-  scroll-margin: 10rem;
+  scroll-margin: 7rem;
 }
 
 .service-box {
@@ -1010,7 +1021,7 @@ label {
 .pricing-sec {
   background-color: aliceblue;
   padding: 5rem;
-  scroll-margin-top: 10rem;
+  scroll-margin-top: 8rem;
 }
 
 .pricing-boxes {
@@ -1145,6 +1156,7 @@ sub {
   align-items: center;
   padding: 2rem;
   margin-top: 5rem;
+  cursor: pointer;
 }
 
 .faq-txt-img {
@@ -1233,7 +1245,7 @@ sub {
 
 .contact-sec {
   padding: 5rem;
-  scroll-margin: 10rem;
+  scroll-margin: 8rem;
 }
 
 .contact-box {
@@ -1328,21 +1340,17 @@ sub {
   font-size: 15px;
   font-weight: 100;
   padding: 2rem;
-  border: 1px solid rgb(226, 222, 222);
+  border: 1px solid #0d83fd;
   border-radius: 1rem;
   outline: none;
   transition: 0.5s;
-}
-
-.name:hover {
-  outline: 1px solid blue;
 }
 
 .subject {
   font-size: 16px;
   font-weight: 100;
   padding: 2rem;
-  border: 1px solid rgb(226, 222, 222);
+  border: 1px solid #0d83fd;
   border-radius: 1rem;
   margin-bottom: 3rem;
 }
@@ -1352,7 +1360,7 @@ sub {
   font-size: 16px;
   font-weight: 100;
   padding: 2rem;
-  border: 1px solid rgb(226, 222, 222);
+  border: 1px solid #0d83fd;
   border-radius: 1rem;
   margin-bottom: 5px;
 }
@@ -1451,14 +1459,14 @@ sub {
   text-align: center;
   padding: 3rem;
   background-color: whitesmoke;
-  border-top: 0.5px solid rgb(230, 224, 224);
+  border-top: 2px solid rgb(230, 224, 224);
 }
 
 .coppy {
   font-size: 1.5rem;
 }
 
-.aisha {
+.pro-name {
   color: black;
   font-weight: 600;
 }
