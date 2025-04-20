@@ -395,16 +395,15 @@ span {
 }
 
 .abt-list-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
+  display: flex;
+  gap: 16px;
   list-style: none;
   align-items: center;
 }
 
 .about-list {
   display: flex;
-  gap: 1rem;
+  gap: 3px;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -965,7 +964,7 @@ label {
   gap: 1rem;
   background-color: white;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 2rem;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 

@@ -283,7 +283,7 @@
     font-size: 16px;
     position: absolute;
     top: -3rem;
-    left: 15rem;
+    left: 12rem;
     cursor: pointer;
     padding: 5px 20px;
     transition: 0.3s;
@@ -377,6 +377,8 @@
   }
 
   .serve-box {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
   .pricing-sec {
@@ -465,15 +467,27 @@
 }
 
 @media (max-width: 361px) {
+  .hero-boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
   .abt-tittle {
     font-size: 2rem;
+  }
+
+  .about-list{
+    display: flex;
+    align-items: center;
   }
 
   .tab-tittle {
     font-size: 16px;
     position: absolute;
     top: -3rem;
-    left: 2rem;
+    left: -1rem;
     cursor: pointer;
     padding: 5px 20px;
     transition: 0.3s;
